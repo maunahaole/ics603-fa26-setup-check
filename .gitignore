@@ -1,0 +1,19 @@
+# The project environment. `uv sync` rebuilds it from uv.lock on any machine, so
+# it never belongs in version control. This line is why GitHub Desktop shows no
+# changes after you run `uv sync`, even though thousands of files just appeared.
+.venv/
+
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# API keys and other secrets, from Module 4 onwards.
+.env
+.env.*
+
+# Files your operating system and editor leave behind. Without these, macOS
+# alone would put a .DS_Store change in front of you at step 8.
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
