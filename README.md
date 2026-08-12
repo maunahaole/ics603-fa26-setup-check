@@ -1,8 +1,7 @@
 # ICS 603 setup check
 
 A throwaway project for the session 2 setup check. It exists so you can prove, in
-a few minutes, that four things work together: `uv`, Python, VS Code, and GitHub
-Desktop.
+a few minutes, that four things work together: `uv`, Python, VS Code, and Git.
 
 You will not build anything on top of this. Delete it whenever you like.
 
@@ -22,8 +21,9 @@ that you would not post publicly.
 
 1. **Use this template** to create your own copy.
 
-2. **Clone it** in GitHub Desktop: *File → Clone repository*, then open the
-   **GitHub.com** tab. Your new copy is in the list, under your own account.
+2. **Clone it** in VS Code: press `Ctrl`/`Cmd` + `Shift` + `P`, run **Git:
+   Clone**, and choose **Clone from GitHub**. Your new copy is in the list, under
+   your own account, so there is no URL to paste.
 
 3. **Create the environment.** Open a terminal in the folder and run:
 
@@ -73,10 +73,13 @@ that you would not post publicly.
 
 7. **Edit `me.md`** and fill in the three blanks.
 
-8. **Commit, push, and share.** In GitHub Desktop, read the changes, write a
-   short message such as `Add setup notes`, click **Commit to main**, then
-   **Push origin**. Refresh your repository on github.com — your change is there.
-   Paste that repository URL in the setup channel on Slack.
+8. **Commit, push, and share.** Open the Source Control panel from the left
+   sidebar — the icon with three connected dots. Click `me.md` to read the diff,
+   write a short message such as
+   `Add setup notes`, and click **Commit** — say **Yes** when VS Code offers to
+   stage all your changes. Then click **Sync Changes**. Refresh your repository
+   on github.com — your change is there. Paste that repository URL in the setup
+   channel on Slack.
 
 ## If something fails
 

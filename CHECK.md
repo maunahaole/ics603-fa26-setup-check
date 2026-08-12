@@ -7,11 +7,12 @@ Run these in a terminal opened in this project folder. In VS Code that is
 uv --version
 uv run python --version    # expect Python 3.13.x
 uv run python hello.py
+git --version
 ```
 
-If all three work, `uv` and Python are working. VS Code and GitHub Desktop are
-not covered by these commands — steps 5 and 8 of the [README](README.md) are
-what check those.
+If all four work, `uv`, Python, and Git are installed. Whether VS Code itself is
+set up correctly is not covered by these commands — steps 5 and 8 of the
+[README](README.md) are what check that.
 
 ## Problems that come up most often
 
@@ -24,7 +25,9 @@ what check those.
 | **Python: Select Interpreter** is not in the command palette | The Microsoft Python extension is not installed. | Install it from the Extensions view, then reload VS Code. |
 | VS Code offers no interpreter inside `.venv` | `.venv` does not exist yet, or VS Code has not noticed it. | Run `uv sync` first, then reload VS Code and select the interpreter again. |
 | `python hello.py` and `uv run python hello.py` print the *same* path | You are in a VS Code terminal and VS Code has activated `.venv` for you. | Expected after step 5. To see the difference, use a terminal you opened outside VS Code. |
-| GitHub Desktop refuses to push | You cloned the course template instead of your own copy. | Use **Use this template** to make your own copy, then clone that. |
+| The Source Control panel says Git is not found, or `git --version` fails | Git is not installed, or VS Code was already open when you installed it. | Install Git as described in the setup handout, then quit and reopen VS Code. |
+| **Git: Clone** lists no repositories | VS Code is not signed in to GitHub. | Click the **Accounts** icon at the bottom of the left sidebar and sign in with GitHub. |
+| The push fails with a permissions error | You cloned the course template instead of your own copy. | Use **Use this template** to make your own copy, then clone that. |
 
 ## Asking for help
 
@@ -35,6 +38,7 @@ paraphrasing an error message removes the part that identifies it.
 Operating system:
 uv --version:
 uv run python --version:
+git --version:
 
 What I ran:
 
@@ -45,5 +49,5 @@ The exact error, copied and pasted:
 What I already tried:
 ```
 
-If the problem is visual — the interpreter picker, a GitHub Desktop screen, a
+If the problem is visual — the interpreter picker, the Source Control panel, a
 VS Code dialog — attach a screenshot too.
