@@ -1,7 +1,7 @@
 [project]
 name = "setup-check"
 version = "0.1.0"
-description = "ICS 603 setup check: prove that uv, Python, VS Code, and GitHub Desktop work together."
+description = "ICS 603 setup check: prove that uv, Python, VS Code, and Git work together."
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = []
