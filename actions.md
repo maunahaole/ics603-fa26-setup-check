@@ -11,7 +11,12 @@
 - git checkout -b (new branch name)
 - git push -u origin (new branch name)
 
-### Assignment
+### Assignment: 1.1.1 After-Class Git Walkthrough
+
+#### Resources:
+- https://github.com/ics-professional-program/ics603-fa26-materials/tree/main/1.1-Python-Environment-Setup
+
+#### My Work:
 - CMD + SHIFT + P
     - Python: Select Interpreter
     - Enter Interpreter Path:
@@ -49,3 +54,28 @@
 - git fetch --prune
     - downloads the latest branch info from GitHub and deletes your local "remembered" copies of any remote branches that no longer exist there — like origin/dev, which you deleted during the merge but your clone still lists
 - git branch -r
+
+### Assignment: After-Class Jupyter Walkthrough
+
+#### Resources:
+- https://github.com/ics-professional-program/ics603-fa26-materials/tree/main/1.2-Jupyter-Notebooks-Workflow
+
+#### My Work:
+- at project root:
+    - touch main.ipynb
+    - Select Kernel
+        - Python Environments
+            - setup-check venv
+        
+- touch main.ipynb
+    - select project kernel
+    - MD 
+    - confirm kernel envir
+    - observe kernel state
+    - restart and run all
+
+### Push version to Github
+- git status
+- git add .
+- git commit -m "ICS 603 setup check"
+- git push
