@@ -1,5 +1,7 @@
+from rich import print
+
 def main():
-    print("Hello hello-ics603!")
+    print("[bold cyan]Hello hello-ics603![/bold cyan]")
 
 
 if __name__ == "__main__":
